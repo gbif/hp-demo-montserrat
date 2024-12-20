@@ -17,15 +17,16 @@ var siteConfig = {
   },
   occurrence: {
     mapSettings: {
-      lat: 60,
-      lng: -100,
-      zoom: 4.9115440763665068
+      lat: 16.723035047581817,
+      lng: -62.18066520760836,
+      zoom: 11.351
     },
     // You probably need help to configure the scope - so just ask
     // for his demo site we only show Fungi (taxonKey=5). It use the predicate structure known from GBIF download API.
     // See https://www.gbif.org/developer/occurrence (long page without enough anchors - search for "Occurrence Download Predicates")
     // The format is however slightly different, in that is use camelCase for keys instead of CONSTANT_CASE.
     rootPredicate: { type: 'equals', key: 'country', value: 'MS' },
+    excludedFilters: ['country']
     // occurrenceSearchTabs: ['MAP', 'TABLE', 'GALLERY', 'DATASETS'] // what tabs should be shown
     // see https://hp-theme.gbif-staging.org/data-exploration-config for more options
   }
